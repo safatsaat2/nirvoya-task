@@ -1,11 +1,10 @@
-import Image from 'next/image'
+"use client"
+import Banner from './banner/Banner'
 
 export default function Home() {
   return (
-    <div>
-      <div>
-        Hell
-      </div>
+    <div className='max-w-[1401px] mx-auto'>
+      <Banner/>
     </div>
   )
 }
