@@ -1,16 +1,17 @@
 "use client";
-import { useEffect, useState } from "react";
+
 import Banner from "./banner/Banner";
 import Category from "./category/Category";
-import Heading from "./components/Heading";
-import ProductCard from "./components/ProductCard";
+
 import FeatureProduct from "./featureProduct/FeatureProduct";
 import FlashDealSProducts from "./flashDealsProduct/FlashDealSProducts";
+import Footer from "./components/Footer";
 
 export default function Home() {
   
   return (
-    <div className="max-w-[1401px] mx-auto">
+    <>
+    <div className="max-w-[1401px] mx-auto mb-[40px]">
       <Banner />
       <Category />
       <div className="mt-[46px]">
@@ -20,5 +21,7 @@ export default function Home() {
       <FeatureProduct/>
       </div>
     </div>
+    </>
+    
   );
 }

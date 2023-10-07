@@ -125,7 +125,7 @@ const Banner = () => {
             </div>
             <div className='ml-[28px]'>
                 <div className='relative'>
-                    <img src="https://i.ibb.co/BjxNZsK/placeholder.png" alt="" />
+                    <img src="https://i.ibb.co/vq9tt7C/Frame-33663.png" alt="" />
                     <div className='flex items-center justify-center'>
                     <button className='absolute z-10 glass-btn text-secondary-0 font-header text-xl font-semibold px-8 py-4 bottom-5'>
                         Groceries collection
