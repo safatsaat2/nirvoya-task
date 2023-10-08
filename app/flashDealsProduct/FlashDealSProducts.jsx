@@ -14,7 +14,7 @@ const FlashDealSProducts = () => {
     return (
         <>
             <Heading header="Flash Deals" />
-        <div className="grid grid-cols-4 gap-x-6 mt-[20px]">
+        <div className="mx-4 lg:mx-0 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-x-6 mt-[16px] lg:mt-[20px]">
           {falshCard.map(card => <ProductCard key={card.header} img={card.img} dis={card.dis} header={card.header} price={card.price}/>)}
         </div>
         </>

@@ -14,7 +14,7 @@ export default function Home() {
     <div className="max-w-[1401px] mx-auto mb-[40px]">
       <Banner />
       <Category />
-      <div className="mt-[46px]">
+      <div className="mt-[30px] lg:mt-[46px]">
         <FlashDealSProducts/>
       </div>
       <div className="mt-[51px]">
