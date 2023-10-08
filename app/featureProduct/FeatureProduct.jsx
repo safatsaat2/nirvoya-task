@@ -14,7 +14,7 @@ const FeatureProduct = () => {
     return (
         <div>
             <Heading header="Featured Product" />
-            <div className="mx-4 lg:mx-0 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-x-6 mt-[16px] lg:mt-[20px]">
+            <div className="mx-4 lg:mx-0 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mt-[16px] lg:mt-[20px]">
           {card.map(card => <ProductCard key={card.header} img={card.img} header={card.header} price={card.price}/>)}
         </div>
         <div className='flex justify-center items-center'>
