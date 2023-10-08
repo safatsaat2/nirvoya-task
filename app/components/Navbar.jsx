@@ -87,7 +87,7 @@ const Navbar = () => {
                         {menuItems.map(item => <p className={`text-${menuColor} cursor-pointer hover:text-secondary-0 uppercase font-medium pb-[6px] text-sm lg:text-base lg:hover:border-b hover:border-b-secondary-0 lg:px-[11px]`} key={item}>{item}</p>)}
                         
                     </div>
-                    <img className='absolute top-0 right-0' src="https://i.ibb.co/WfpMNSj/Arrow-Right-2.png" alt="" />
+                    <img className='absolute top-0 right-0 lg:hidden' src="https://i.ibb.co/WfpMNSj/Arrow-Right-2.png" alt="" />
                     </div>
                     
                 </div>
