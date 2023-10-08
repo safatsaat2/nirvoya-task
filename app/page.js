@@ -17,7 +17,7 @@ export default function Home() {
       <div className="mt-[30px] lg:mt-[46px]">
         <FlashDealSProducts/>
       </div>
-      <div className="mt-[51px]">
+      <div className="mt-[30px] lg:mt-[51px]">
       <FeatureProduct/>
       </div>
     </div>

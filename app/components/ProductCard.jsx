@@ -31,7 +31,7 @@ const ProductCard = ({img, dis, header, price}) => {
             <h4 className='w-[165px] lg:w-[294px] h-[35px] lg:h-[46px] text-[14px] lg:text-[18px] leading-[18.2px] lg:leading-[21.6px] ml-1 mt-[12px] pr-[13px] lg:pr-0'>{header}</h4>
             <div className='flex justify-between items-center mt-2 lg:mt-[12px] mb-[12px]'>
                 <h1 className='text-base lg:text-[22px] text-primary-0 font-medium'>{price}</h1>
-                <img className='w-4 lg:w-full' src="https://i.ibb.co/fn6f01X/basket.png" alt="" />
+                <img className='w-4 lg:w-6' src="https://i.ibb.co/fn6f01X/basket.png" alt="" />
             </div>
         </div>
     );
