@@ -21,7 +21,7 @@ const Category = () => {
             </h3>
             <div className='grid grid-cols-5 justify-between gap-[13px] mt-8'>
                 {category.map(cat => 
-                <div key={cat.name} className='w-[270px] cursor-pointer h-[65px] category-box flex justify-between items-center pl-[16px] pr-[22px]'>
+                <div key={cat.key} className='w-[270px] cursor-pointer h-[65px] category-box flex justify-between items-center pl-[16px] pr-[22px]'>
                     <div className='flex items-center gap-x-[10px]'>
                         <img src={cat?.icon} alt="" />
                         <p>{cat?.name}</p>

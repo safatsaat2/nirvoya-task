@@ -1,61 +1,76 @@
 [
     {
+        "key": 1,
         "name":"Health & Household",
         "icon": "https://i.ibb.co/tcwv6LL/icon.png"
     },
     {
+        "key": 2,
         "name":"Kid Fashion",
         "icon": "https://i.ibb.co/7Vspfsz/Frame.png"
     },
     {
+        "key": 3,
         "name":"Toys",
         "icon": "https://i.ibb.co/xjypyqJ/Toys-2.png"
     },
     {
+        "key": 4,
         "name":"Groceries",
         "icon": "https://i.ibb.co/dfDf3Vp/Icon-1.png"
     },
     {
+        "key": 5,
         "name":"Home & Lifestyle",
         "icon": "https://i.ibb.co/QF1frQj/Frame-8.png"
     },
     {
+        "key": 6,
         "name":"Men Fashion",
         "icon": "https://i.ibb.co/n7tCkRp/Frame-1.png"
     },
     {
+        "key": 7,
         "name":"Women’s Fashion",
         "icon": "https://i.ibb.co/Qm0793P/Frame-2.png"
     },
     {
+        "key": 8,
         "name":"Stationary & Books",
         "icon": "https://i.ibb.co/znX9p2C/Frame-3.png"
     },
     {
+        "key": 9,
         "name":"Leather Goods",
         "icon": "https://i.ibb.co/HpF03LN/Frame-4.png"
     },
     {
+        "key": 10,
         "name":"Jewelleries",
         "icon": "https://i.ibb.co/kgmyC71/Frame-9.png"
     },
     {
+        "key": 11,
         "name":"Watches",
         "icon": "https://i.ibb.co/1mN7Dn7/Frame-5.png"
     },
     {
+        "key": 12,
         "name":"Men Fashion",
         "icon": "https://i.ibb.co/H4MM4b9/Group.png"
     },
     {
+        "key": 13,
         "name":"Tools & Hardware",
         "icon": "https://i.ibb.co/54Hjf6X/Frame-6.png"
     },
     {
+        "key": 14,
         "name":"Pet Supplies",
         "icon": "https://i.ibb.co/HpF03LN/Frame-4.png"
     },
     {
+        "key": 15,
         "name":"Seasonal",
         "icon": "https://i.ibb.co/8DxGh2c/Group-1.png"
     }
