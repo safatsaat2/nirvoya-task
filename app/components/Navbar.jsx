@@ -4,6 +4,102 @@ import { logo } from '../items/element';
 import { Icon } from '@iconify/react';
 
 const Navbar = () => {
+
+    const items = [{
+        "name": "Saree",
+        "item": [
+            "Cotton",
+            "Silk",
+            "Katan",
+            "Muslin",
+            "Jamdani",
+            "Georgette",
+            "Nakshi Kantha",
+            "Linen",
+            "Khadi",
+            "Tangail Taant",
+            "Monipuri",
+            "Dhakai Benaroshi",
+        ]
+    },
+    {
+        "name": "Clothes",
+        "item": [
+            "T-shirt",
+            "Shorts",
+            "Shirt",
+            "Tracksuit",
+            "Jeans",
+            "Georgette",
+            "Waistcoat",
+            "Sweater",
+            "coats",
+            "Suit",
+            "Sweatshirt",
+            "Uniform",
+        ]
+    },
+    {
+        "name": "Cosmetic",
+        "item": [
+            "Perfume",
+            "Eye make-up",
+            "Skin care",
+            "Hair care",
+            "Make-up",
+            "Oral Care",
+            "Body Care",
+            "Sanitary pad",
+            "Shower Gels & Creams",
+            "Hair Removal Products",
+            "Lipstick",
+            "Suntan cream",
+        ]
+    },
+    {
+        "name": "Sports & Outdoor",
+        "item": [
+            "Sweatshirt",
+            "T-shirt",
+            "Sports Bra",
+            "Leggings",
+            "Tracksuit",
+            "Running Shoes",
+            "Sports Bag",
+            "Sports Equipment",
+            "Outdoor Shoes",
+            "Snow Boot",
+            "Outdoor Equipment",
+            "Sports Accessories",
+        ]
+    }
+    ]
+
+    const items2 = [
+        {
+            "name": "Personal Care",
+            "item": [
+                "Perfume",
+                "Sexual Health",
+                "After Shave Products",
+                "Razor blade",
+            ]
+        },
+        {
+            "name": "Shoes",
+            "item": [
+                "Heeled shoes",
+                "sneakers",
+                "Casual Shoes",
+                "Babet",
+                "Sandals",
+                "Slipper",
+            ]
+        }
+    ]
+
+
+
     const loginColor = "#29292E"
     const pColor = "#4D4D4D"
     const menuColor = "#505050"
@@ -18,7 +114,7 @@ const Navbar = () => {
         "Food & Grocery",
     ]
     return (
-        <>
+        <div className='relative'>
             <div className='border-b border-[#EFEEEE] border-[1.5px]'>
                 <div className='max-w-[1401px] mx-auto mt-2 lg:mt-[33px]'>
                     {/* For Mobile */}
@@ -46,7 +142,7 @@ const Navbar = () => {
                             <button className='bg-[#0198E9] rounded-tr-[5px] rounded-br-[5px] text-white text-[28px] px-[18px] py-[11px]'><Icon icon="bx:bx-search" /></button>
                         </div>
 
-                       
+
 
 
 
@@ -83,16 +179,41 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className='relative'>
-                    <div className='lg:mx-[33px]  flex justify-between gap-x-[18px] px-[18px] lg:px-0 items-center mt-[26px] lg:mt-[34px] overflow-x-scroll lg:overflow-hidden whitespace-nowrap'>
-                        {menuItems.map(item => <p className={`text-${menuColor} cursor-pointer hover:text-secondary-0 uppercase font-medium pb-[6px] text-sm lg:text-base lg:hover:border-b hover:border-b-secondary-0 lg:px-[11px]`} key={item}>{item}</p>)}
-                        
+                        <div className='lg:mx-[33px]  flex justify-between gap-x-[18px] px-[18px] lg:px-0 items-center mt-[26px] lg:mt-[34px] overflow-x-scroll lg:overflow-hidden whitespace-nowrap'>
+                            {menuItems.map(item => <p className={`text-${menuColor} cursor-pointer hover:text-secondary-0 uppercase font-medium pb-[6px] text-sm lg:text-base lg:hover:border-b hover:border-b-secondary-0 lg:px-[11px]`} key={item}>{item}</p>)}
+
+                        </div>
+                        <img className='absolute top-0 right-0 lg:hidden' src="https://i.ibb.co/WfpMNSj/Arrow-Right-2.png" alt="" />
                     </div>
-                    <img className='absolute top-0 right-0 lg:hidden' src="https://i.ibb.co/WfpMNSj/Arrow-Right-2.png" alt="" />
-                    </div>
-                    
+
                 </div>
             </div>
-        </>
+            <div className='flex justify-center items-center'>
+                <div className='absolute z-20 w-[1400px] top-full bg-white'>
+                    <div className=' flex justify-center gap-x-[150px] mt-[30px] mb-[25px]'>
+                        <div className='grid items-start justify-between grid-cols-4 gap-x-[150px]'>
+                            {items.map(i => <div key={i}>
+                                <h1 className='font-medium text-blackPrimary-0'>{i.name}</h1>
+                                <p>
+                                    {i.item.map(i => <p className='text-[#757575] text-sm mt-[6px]' key={i}>{i}</p>)}
+                                </p>
+                            </div>)}
+                        </div>
+                        <div className='flex flex-col gap-y-[30px]'>
+                        {items2.map(i => <div key={i}>
+                                <h1 className='font-medium text-blackPrimary-0'>{i.name}</h1>
+                                <p>
+                                    {i.item.map(i => <p className='text-[#757575] text-sm mt-[6px]' key={i}>{i}</p>)}
+                                </p>
+                            </div>)}
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
     );
 };
 
