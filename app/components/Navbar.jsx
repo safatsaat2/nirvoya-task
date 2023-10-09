@@ -185,7 +185,7 @@ const Navbar = () => {
                     </div>
                     <div className='relative'>
                         <div className='lg:mx-[33px]  flex justify-between gap-x-[18px] px-[18px] lg:px-0 items-center mt-[26px] lg:mt-[34px] overflow-x-scroll lg:overflow-hidden whitespace-nowrap'>
-                            {menuItems.map(item => <p onMouseOver={handleMenuShow} className={`text-${menuColor} cursor-pointer hover:text-secondary-0 uppercase font-medium pb-[6px] text-sm lg:text-base lg:hover:border-b hover:border-b-secondary-0 lg:px-[11px]`} key={item}>{item}</p>)}
+                            {menuItems.map(item => <p onMouseOver={handleMenuShow} onMouseOut={() => setShowSubItem(!showSubItem)} className={`text-${menuColor} cursor-pointer hover:text-secondary-0 uppercase font-medium pb-[6px] text-sm lg:text-base lg:hover:border-b hover:border-b-secondary-0 lg:px-[11px]`} key={item}>{item}</p>)}
 
                         </div>
                         <img className='absolute top-0 right-0 lg:hidden' src="https://i.ibb.co/WfpMNSj/Arrow-Right-2.png" alt="" />

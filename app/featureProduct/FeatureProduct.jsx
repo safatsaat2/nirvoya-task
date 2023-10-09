@@ -16,7 +16,7 @@ const FeatureProduct = () => {
         <div>
             <Heading header="Featured Product" />
             <div className="mx-4 lg:mx-0 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mt-[16px] lg:mt-[20px]">
-          {card.map(card => <ProductCard key={card.id} img={card.img} header={card.header} price={card.price}/>)}
+          {card.map(card => <ProductCard key={card.id} id={card.id} img={card.img} header={card.header} price={card.price}/>)}
         </div>
         <div className='flex justify-center items-center'>
         <button className='bg-[#34ADED] py-[11px] px-[19px] lg:px-[26px] mt-[20px] lg:mt-[40px] rounded-[80px] uppercase text-white text-xs lg:text-base flex items-center justify-end gap-x-1'>
