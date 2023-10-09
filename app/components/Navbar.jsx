@@ -194,7 +194,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={showSubItem ? 'flex justify-center items-center' : "hidden"}>
-                <div onMouseOut={() => setShowSubItem(!showSubItem)} className='absolute z-20 w-[1400px] top-full bg-white'>
+                <div onMouseOver={handleMenuShow} onMouseOut={() => setShowSubItem(!showSubItem)} className='absolute z-20 w-[1400px] top-full bg-white'>
                     <div className=' flex justify-center gap-x-[150px] mt-[30px] mb-[25px]'>
                         <div className='grid items-start justify-between grid-cols-4 gap-x-[150px]'>
                             {items.map(i => <div key={i.name}>
