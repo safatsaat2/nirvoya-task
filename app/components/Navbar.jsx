@@ -1,9 +1,10 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import { logo } from '../items/element';
 import { Icon } from '@iconify/react';
 
 const Navbar = () => {
+    const [showSubItem, setShowSubItem] = useState(false)
 
     const items = [{
         "name": "Saree",
@@ -98,6 +99,10 @@ const Navbar = () => {
         }
     ]
 
+    const handleMenuShow = () => {
+        setShowSubItem(true)
+    }
+
 
 
     const loginColor = "#29292E"
@@ -180,7 +185,7 @@ const Navbar = () => {
                     </div>
                     <div className='relative'>
                         <div className='lg:mx-[33px]  flex justify-between gap-x-[18px] px-[18px] lg:px-0 items-center mt-[26px] lg:mt-[34px] overflow-x-scroll lg:overflow-hidden whitespace-nowrap'>
-                            {menuItems.map(item => <p className={`text-${menuColor} cursor-pointer hover:text-secondary-0 uppercase font-medium pb-[6px] text-sm lg:text-base lg:hover:border-b hover:border-b-secondary-0 lg:px-[11px]`} key={item}>{item}</p>)}
+                            {menuItems.map(item => <p onMouseOver={handleMenuShow} className={`text-${menuColor} cursor-pointer hover:text-secondary-0 uppercase font-medium pb-[6px] text-sm lg:text-base lg:hover:border-b hover:border-b-secondary-0 lg:px-[11px]`} key={item}>{item}</p>)}
 
                         </div>
                         <img className='absolute top-0 right-0 lg:hidden' src="https://i.ibb.co/WfpMNSj/Arrow-Right-2.png" alt="" />
@@ -188,23 +193,24 @@ const Navbar = () => {
 
                 </div>
             </div>
-            <div className='flex justify-center items-center'>
-                <div className='absolute z-20 w-[1400px] top-full bg-white'>
+            <div className={showSubItem ? 'flex justify-center items-center' : "hidden"}>
+                <div onMouseOut={() => setShowSubItem(!showSubItem)} className='absolute z-20 w-[1400px] top-full bg-white'>
                     <div className=' flex justify-center gap-x-[150px] mt-[30px] mb-[25px]'>
                         <div className='grid items-start justify-between grid-cols-4 gap-x-[150px]'>
-                            {items.map(i => <div key={i}>
+                            {items.map(i => <div key={i.name}>
+                                
                                 <h1 className='font-medium text-blackPrimary-0'>{i.name}</h1>
-                                <p>
-                                    {i.item.map(i => <p className='text-[#757575] text-sm mt-[6px]' key={i}>{i}</p>)}
-                                </p>
+
+                                {i.item.map(i => <p className='text-[#757575] cursor-pointer text-sm mt-[6px]' key={i}>{i}</p>)}
+
                             </div>)}
                         </div>
                         <div className='flex flex-col gap-y-[30px]'>
-                        {items2.map(i => <div key={i}>
+                            {items2.map(i => <div key={i.name}>
                                 <h1 className='font-medium text-blackPrimary-0'>{i.name}</h1>
-                                <p>
-                                    {i.item.map(i => <p className='text-[#757575] text-sm mt-[6px]' key={i}>{i}</p>)}
-                                </p>
+
+                                {i.item.map(i => <p className='text-[#757575] cursor-pointer text-sm mt-[6px]' key={i}>{i}</p>)}
+
                             </div>)}
                         </div>
                     </div>
