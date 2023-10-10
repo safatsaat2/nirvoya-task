@@ -23,6 +23,10 @@ body {
   border-radius: 9px 2px 2px 2px;
   background: var(--Gd, linear-gradient(82deg, #ff7a00 24.9%, #ffb800 96.57%));
 }
+.discount-box2 {
+  border-radius: 2px;
+  background: var(--Gd, linear-gradient(82deg, #ff7a00 24.9%, #ffb800 96.57%));
+}
 .textShadow{
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
 }
