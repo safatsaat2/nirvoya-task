@@ -135,7 +135,105 @@ const ProductDetail = ({ params }) => {
                 <p className='text-sm font-semibold text-white'>20%</p>
               </div>
             </div>
+            <div className="flex items-center gap-x-5 mt-[11px]">
+              <p className="text-[#3D3D3F] font-medium leading-[24px]">SKU: <span className="font-normal text-[#757575]">12314124124</span></p>
+              <div className="flex items-center gap-x-[3px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_1834_21597)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00033 0.666626C3.95033 0.666626 0.666992 3.94996 0.666992 7.99996C0.666992 12.05 3.95033 15.3333 8.00033 15.3333C12.0503 15.3333 15.3337 12.05 15.3337 7.99996C15.3337 3.94996 12.0503 0.666626 8.00033 0.666626ZM11.179 6.75996C11.2375 6.69305 11.2821 6.61512 11.31 6.53074C11.338 6.44636 11.3488 6.35723 11.3418 6.26862C11.3349 6.18 11.3102 6.09367 11.2694 6.01471C11.2285 5.93575 11.1723 5.86576 11.104 5.80885C11.0357 5.75194 10.9568 5.70927 10.8717 5.68333C10.7867 5.6574 10.6973 5.64873 10.6089 5.65784C10.5205 5.66695 10.4348 5.69366 10.3568 5.73638C10.2789 5.77911 10.2102 5.83699 10.155 5.90663L7.28833 9.34596L5.80499 7.86196C5.67926 7.74052 5.51086 7.67332 5.33606 7.67484C5.16126 7.67636 4.99405 7.74647 4.87045 7.87008C4.74684 7.99369 4.67673 8.16089 4.67521 8.33569C4.67369 8.51049 4.74089 8.67889 4.86233 8.80463L6.86233 10.8046C6.92783 10.8701 7.00625 10.9212 7.0926 10.9547C7.17895 10.9881 7.27132 11.0033 7.36384 10.9991C7.45635 10.9949 7.54698 10.9714 7.62993 10.9303C7.71289 10.8891 7.78636 10.8311 7.84566 10.76L11.179 6.75996Z" fill="#3AB137" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1834_21597">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p className="text-[#757575]">In Stock</p>
+              </div>
+            </div>
+            <div className='mt-[33px]'>
+              <p className='text-[18px] text-blackPrimary-0 leading-[30px] w-[598px]'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </p>
+            </div>
+            <div className='mt-4'>
+              <ul className='text-[18px] text-blackPrimary-0 list-disc ml-8'>
+                <li className=''>Direct Full Array   </li>
+                <li className='mt-4'>Quantum Dot Technology</li>
+                <li className='mt-4'>Ambient Mode</li>
+                <li className='mt-4'>One Remote Control</li>
+              </ul>
+            </div>
+            <div className='flex items-center gap-x-4 mt-10'>
+              <p className='text-[19px] text-blackPrimary-0'>Size</p>
+              <div className='py-1 px-[13px] border border-[#EAEAEA] bg-white rounded-[1px] cursor-pointer hover:border-[#0198E9] hover:bg-secondary-0 text-[#6E6E6F] hover:text-white'>
+                <p className='text-sm  leading-[21px]'>
+                  S
+                </p>
+              </div>
+              <div className='py-1 px-[13px] border border-[#EAEAEA] bg-white rounded-[1px] cursor-pointer hover:border-[#0198E9] hover:bg-secondary-0 text-[#6E6E6F] hover:text-white'>
+                <p className='text-sm  leading-[21px]'>
+                  M
+                </p>
+              </div>
+              <div className='py-1 px-[13px] border border-[#EAEAEA] bg-white rounded-[1px] cursor-pointer hover:border-[#0198E9] hover:bg-secondary-0 text-[#6E6E6F] hover:text-white'>
+                <p className='text-sm  leading-[21px]'>
+                  X
+                </p>
+              </div>
+              <div className='py-1 px-[13px] border border-[#EAEAEA] bg-white rounded-[1px] cursor-pointer hover:border-[#0198E9] hover:bg-secondary-0 text-[#6E6E6F] hover:text-white'>
+                <p className='text-sm  leading-[21px]'>
+                  XL
+                </p>
+              </div>
+              <div className='py-1 px-[13px] border border-[#EAEAEA] bg-white rounded-[1px] cursor-pointer hover:border-[#0198E9] hover:bg-secondary-0 text-[#6E6E6F] hover:text-white'>
+                <p className='text-sm  leading-[21px]'>
+                  XXL
+                </p>
+              </div>
+            </div>
+            <div className='flex items-center mt-[32px]'>
+              <p className='text-sm leading-[21px]'>Quantity:</p>
+              <div className='bg-[#EAEAEA] border-[1.5px] border-[#EAEAEA] flex items-center justify-center ml-4 rounded-[2px]'>
+                <p className='py-1 px-2 font-medium text-[#ACACAC] cursor-pointer'>-</p>
+                <div className='bg-white py-1 px-2 text-[#3D3D3F] font-medium'>
+                  0
+                </div>
+                <p className='py-1 px-2 font-medium text-[#ACACAC] cursor-pointer'>+</p>
+              </div>
+              <button className='bg-secondary-0 text-white text-xl font-medium rounded-[3px] py-[11px] px-[44px] ml-[35px]'>
+              Add cart
+              </button>
+              <button className='bg-[#EBF4F9] text-secondary-0 border-[1.5px] border-secondary-0 text-xl font-medium rounded-[3px] py-[11px] px-[44px] ml-[35px]'>
+              Buy Now
+              </button>
+            </div>
           </div>
+        </div>
+
+        <div className='bg-[#FCFCFC] border border-[#F1F1F1] py-[20px] pl-[48px] mt-[84px]'>
+          <p className='text-[24px] font-medium text-secondary-0'>Producr details of LED Monitor With High Quality In The World</p>
+        </div>
+
+        <div className='bg-white w-[1304px] mx-auto text-blackPrimary-0'>
+        <p className='text-[24px] font-bold pt-[25px]'>See the best picture no matter where you sit</p>
+        <div className='flex items-start justify-between mt-[19px] pb-[35px] border-b border-[#F1F1F1]'>
+          <ul className='text-[18px] leading-[34px] list-disc ml-7 w-[618px]'>
+            <li className='leading-[34px]'>Size : M, L, XL</li>
+            <li className='leading-[34px]'> Product Type : Jogger</li>
+            <li className='leading-[34px]'> Main Material : Cotton </li>
+            <li className='leading-[34px]'> Gender : Male</li>
+            <li className='leading-[34px]'>Waist : Mid-rise</li>
+            <li className='leading-[34px]'> Zip : Fly</li>
+          </ul>
+          <ul className='teleading-[34px]xt-[18px] leading-[34px] list-disc ml-7 w-[618px]'>
+            <li className='leading-[34px]'>Zipper : Yes</li>
+            <li className='leading-[34px]'>Pocket : Two front and One Back Pockets.</li>
+            <li className='leading-[34px]'>100% Authentic Product</li>
+            <li className='leading-[34px]'>Product color may slightly vary due to our photography and Sometimes it’s vary on our devices</li>
+            
+          </ul>
+        </div>
         </div>
 
       </div>
